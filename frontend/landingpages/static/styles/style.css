@@ -1,0 +1,264 @@
+/* This file is used to define the global styles for the landing pages. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.8125;
+}
+
+/* This is the global font for the landing pages. */
+:root {
+    --primary-color:  #00a0f0;
+    --primary-s-color: #007FFFD8;
+    --secondary-color: #fff;
+    --tertiary-color: #e8eaed;
+    --quaternary-color: #152e44;
+    --quinary-color: #112536;
+    --senary-color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.max-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Header */
+.header {
+    width: 100vw;
+    z-index: 10;
+}
+
+.sub-header {
+    position: fixed;
+    width: 100%;
+    max-width: 1170px;
+    height: 64px;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15;
+    top: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+.sub-header h1 {
+    color: var(--senary-color);
+}
+
+.txt-blue {
+    color: var(--primary-s-color);
+}
+
+.sub-header ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.sub-header a {
+    text-decoration: none;
+    color: var(--senary-color);
+}
+
+.sub-header a:hover {
+    color: var(--primary-s-color);
+    transition: 0.3s ease all ;
+}
+
+/** End Header */
+
+/** Banner */
+.banner {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sub-banner {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/location.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sub-banner-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #007FFF3D;
+    padding: 2.5rem;
+}
+
+.sub-banner-content-2 {
+    position: relative;
+    background: #007FFFD8;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(-31deg);
+    transform: rotate(-31deg);
+    height: 200%;
+    right: 50%;
+    top: -200%;
+}
+
+/** End Banner */
+
+/** About */
+.about {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5rem;
+    background-color: white;
+}
+
+.sub-about {
+    display: flex;
+    z-index: 10;
+}
+
+.info-about {
+    flex: 1;
+    z-index: 10;
+}
+
+.img-about {
+    flex: 1;
+    background-image: url('../images/gps_tracker.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+/** End About */
+
+/** Features */
+.features {
+    /*position: relative;*/
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5rem;
+    background-color: white;
+    z-index: 10;
+}
+
+/** End Features */
+
+/** Video */
+
+.video {
+    /*position: relative;*/
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.sub-video {
+    padding: 2.5rem;
+    background-color: var(--quinary-color);
+    width: 100%;
+    height: 80vh;
+    z-index: 10;
+}
+
+.sub-video > iframe {
+    padding: 2.5rem;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: var(--quinary-color);
+}
+
+/** End Video */
+
+/** Footer */
+footer {
+    /*position: relative;*/
+    width: 100vw;
+    height: 200px;
+    padding: 2.5rem;
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+    z-index: 10;
+}
+
+.sub-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+footer li {
+    list-style: none;
+    color: #45a0d3;
+}
+
+footer  a {
+    text-decoration: none;
+    color: #45a0d3;
+}
+
+footer a:hover {
+    color: var(--primary-s-color);
+    transition: 0.3s ease all ;
+}
+
+
+
+/** End Footer */
+
+/** Text */
+
+.p-2 {
+    padding: 2.5rem;
+}
+
+.txt-color-white {
+    color: white;
+}
+
+.txt-bold {
+    font-weight: bold;
+}
+
+.txt-title-banner {
+    font-size: 3em;
+    z-index: 10;
+}
+
+.txt-subtitle-banner {
+    z-index: 10;
+}
+
+.txt-paragraph-banner {
+    font-size: 1em;
+    z-index: 10;
+}
+/** End Text */
